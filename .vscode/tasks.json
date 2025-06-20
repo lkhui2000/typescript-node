@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "TypeScript Watch",
+      "type": "shell",
+      "command": "tsc --watch",
+      "problemMatcher": "$tsc-watch",
+      "isBackground": true,
+      "group": "build"
+    },
+    {
+      "label": "Run Node.js",
+      "type": "shell",
+      "command": "node dist/index.js",
+      "dependsOn": "TypeScript Watch",
+      "problemMatcher": [],
+      "isBackground": false,
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      }
+    }
+  ]
+}
