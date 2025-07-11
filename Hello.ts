@@ -26,6 +26,7 @@ function HelloOOOO(who: string, greeting: string = "Hello") {
 function HelloWorldMyDear(who: string, greeting: string = "Hello") {
     console.log(greeting + ", " + who + "!");
     return greeting + ", " + who + "!";
+    
 }
 // Export the function so it can be used in other files
 export { Hello, Hello2, HelloOOOO, HelloWorldMyDear };
